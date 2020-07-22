@@ -4,12 +4,10 @@
 # --------------------------------------------------------------------------------------------
 
 from azure.cli.core import AzCommandsLoader
-
 from azure.cli.command_modules.synapse._help import helps  # pylint: disable=unused-import
 
 
 class SynapseCommandsLoader(AzCommandsLoader):
-
     def __init__(self, cli_ctx=None):
         from azure.cli.core.commands import CliCommandType
         from azure.cli.command_modules.synapse._client_factory import cf_synapse
@@ -18,9 +16,7 @@ class SynapseCommandsLoader(AzCommandsLoader):
             client_factory=cf_synapse,
             operation_group='synapse')
 
-        super(SynapseCommandsLoader, self).__init__(cli_ctx=cli_ctx,
-                                                    operation_group='synapse',
-                                                  custom_command_type=synapse_custom)
+        super(SynapseCommandsLoader, self).__init__(cli_ctx=cli_ctx, operation_group='synapse', custom_command_type=synapse_custom)
 
     def load_command_table(self, args):
         from azure.cli.command_modules.synapse.commands import load_command_table

@@ -29,7 +29,6 @@ def validate_statement_language(namespace):
     namespace.language = statement_language.get(namespace.language.lower())
 
 
-
 def example_name_or_id_validator(cmd, namespace):
     # Example of a storage account name or ID validator.
     # See: https://github.com/Azure/azure-cli/blob/dev/doc/authoring_command_modules/authoring_commands.md#supporting-name-or-id-parameters

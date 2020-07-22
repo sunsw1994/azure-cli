@@ -11,18 +11,22 @@ from ..util import categorized_files, check_udfs_folder
 from ..constant import DOTNET_CLASS, DOTNET_FILE, SPARK_DOTNET_UDFS_FOLDER_NAME, EXECUTOR_SIZE, \
     SPARK_DOTNET_ASSEMBLY_SEARCH_PATHS_KEY, SparkBatchLanguage, SynapseSqlCreateMode
 
+
 # Spark batch job
 def get_spark_batch_job(cmd, job_id, workspace_name, spark_pool_name):
     client = cf_synapse_spark_batch(cmd.cli_ctx, workspace_name, spark_pool_name)
     return client.get_spark_batch_job(job_id, detailed=True)
 
+
 def cancel_spark_batch_job(cmd, job_id, workspace_name, spark_pool_name):
     client = cf_synapse_spark_batch(cmd.cli_ctx, workspace_name, spark_pool_name)
     return client.cancel_spark_batch_job(job_id)
 
+
 def list_spark_batch_jobs(cmd, workspace_name, spark_pool_name, from_index=None, size=None):
     client = cf_synapse_spark_batch(cmd.cli_ctx, workspace_name, spark_pool_name)
     return client.get_spark_batch_jobs(from_index, size, detailed=True)
+
 
 def create_spark_batch_job(cmd, workspace_name, spark_pool_name, job_name, main_definition_file,
                            main_class_name, executor_size, executors, language=SparkBatchLanguage.Scala,
@@ -61,22 +65,23 @@ def create_spark_batch_job(cmd, workspace_name, spark_pool_name, job_name, main_
     executor_memory = EXECUTOR_SIZE[executor_size]['Memory']
 
     spark_batch_job_options = SparkBatchJobOptions(
-        tags=tags, 
-        name=job_name, 
-        file=file, 
-        class_name=class_name, 
-        arguments=arguments, 
+        tags=tags,
+        name=job_name,
+        file=file,
+        class_name=class_name,
+        arguments=arguments,
         jars=jars,
-        files=files, 
-        archives=archives, 
-        configuration=configuration, 
-        driver_memory=driver_memory, 
+        files=files,
+        archives=archives,
+        configuration=configuration,
+        driver_memory=driver_memory,
         driver_cores=driver_cores,
-        executor_memory=executor_memory, 
-        executor_cores=executor_cores, 
+        executor_memory=executor_memory,
+        executor_cores=executor_cores,
         executor_count=executors)
 
-    return client.create_spark_batch_job(spark_batch_job_options,detailed=True)
+    return client.create_spark_batch_job(spark_batch_job_options, detailed=True)
+
 
 # Spark Session
 def list_spark_session_jobs(cmd, workspace_name, spark_pool_name, from_index=None, size=None):
@@ -97,15 +102,15 @@ def create_spark_session_job(cmd, workspace_name, spark_pool_name, job_name, exe
     executor_memory = EXECUTOR_SIZE[executor_size]['Memory']
 
     spark_session_options = SparkSessionOptions(
-        tags=tags, 
-        name=job_name, 
-        jars=jars, 
+        tags=tags,
+        name=job_name,
+        jars=jars,
         files=files,
-        conf=configuration, 
-        driver_memory=driver_memory, 
+        conf=configuration,
+        driver_memory=driver_memory,
         driver_cores=driver_cores,
-        executor_memory=executor_memory, 
-        executor_cores=executor_cores, 
+        executor_memory=executor_memory,
+        executor_cores=executor_cores,
         executor_count=executors)
 
     return client.create_spark_session(spark_session_options, detailed=True)
@@ -124,6 +129,7 @@ def cancel_spark_session_job(cmd, workspace_name, spark_pool_name, session_id):
 def reset_timeout(cmd, workspace_name, spark_pool_name, session_id):
     client = cf_synapse_spark_session(cmd.cli_ctx, workspace_name, spark_pool_name)
     return client.reset_spark_session_timeout(session_id)
+
 
 # Spark Session Statement
 def list_spark_session_statements(cmd, workspace_name, spark_pool_name, session_id):

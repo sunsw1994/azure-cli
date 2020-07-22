@@ -42,7 +42,7 @@ def synapse_spark_factory(cli_ctx, workspace_name, sparkpool_name):
     )
     return SparkClient(
         credential=cred,
-        endpoint='{}{}.{}'.format("https://",workspace_name,'dev.azuresynapse.net'),
+        endpoint='{}{}.{}'.format("https://", workspace_name, 'dev.azuresynapse.net'),
         spark_pool_name=sparkpool_name
     )
 

@@ -24,4 +24,3 @@ def check_udfs_folder(conf):
     if udfs_folder_name not in paths:
         paths.append(udfs_folder_name)
     conf[SPARK_DOTNET_ASSEMBLY_SEARCH_PATHS_KEY] = ','.join(paths)
-

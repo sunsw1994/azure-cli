@@ -12,6 +12,7 @@ from azure.mgmt.synapse.models import Workspace, WorkspacePatchInfo, ManagedIden
     SqlPool, SqlPoolPatchInfo, Sku
 from .constant import SynapseSqlCreateMode
 
+
 # Synapse workspace
 def list_workspaces(cmd, client, resource_group_name=None):  # pylint: disable=unused-argument
     return client.list_by_resource_group(
@@ -39,12 +40,15 @@ def update_workspace(cmd, client, resource_group_name, workspace_name, sql_admin
     workspace_patch_info = WorkspacePatchInfo(tags=tags, sql_admin_login_password=sql_admin_login_password)
     return sdk_no_wait(no_wait, client.update, resource_group_name, workspace_name, workspace_patch_info)
 
+
 def custom_check_name_availability(cmd, client, name):
     return client.check_name_availability(name, "Microsoft.Synapse/workspaces")
+
 
 # Synapse sparkpool
 def get_spark_pool(cmd, client, resource_group_name, workspace_name, spark_pool_name):
     return client.get(resource_group_name, workspace_name, spark_pool_name)
+
 
 def create_spark_pool(cmd, client, resource_group_name, workspace_name, spark_pool_name,
                       spark_version, node_size, node_count,
@@ -148,4 +152,3 @@ def create_firewall_rule(cmd, client, resource_group_name, workspace_name, rule_
                          no_wait=False):
     return sdk_no_wait(no_wait, client.create_or_update, resource_group_name, workspace_name, rule_name,
                        start_ip_address=start_ip_address, end_ip_address=end_ip_address)
-

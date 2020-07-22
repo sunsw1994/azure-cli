@@ -7,14 +7,16 @@
 from azure.cli.core.commands import CliCommandType
 from azure.cli.command_modules.synapse._client_factory import cf_synapse
 
+
 def get_custom_sdk(custom_module, client_factory):
     return CliCommandType(
         operations_tmpl='azure.cli.command_modules.synapse.operations.{}#'.format(custom_module) + '{}',
         client_factory=client_factory,
     )
 
+
 def load_command_table(self, _):
-    #from azure.cli.core.commands import CliCommandType
+    from azure.cli.core.commands import CliCommandType
     from ._client_factory import cf_synapse_client_workspace_factory
     from ._client_factory import cf_synapse_client_operations_factory
     from ._client_factory import cf_synapse_client_bigdatapool_factory
@@ -26,15 +28,15 @@ def load_command_table(self, _):
     synapse_workspace_sdk = CliCommandType(
         operations_tmpl='azure.mgmt.synapse.operations#WorkspacesOperations.{}',
         client_factory=cf_synapse_client_workspace_factory)
-    
+
     synapse_operations_sdk = CliCommandType(
         operations_tmpl='azure.mgmt.synapse.operations#Operations.{}',
         client_factory=cf_synapse_client_operations_factory)
-    
+
     synapse_bigdatapool_sdk = CliCommandType(
         operations_tmpl='azure.mgmt.synapse.operations#BigDataPoolsOperations.{}',
         client_factory=cf_synapse_client_bigdatapool_factory)
-    
+
     synapse_sqlpool_sdk = CliCommandType(
         operations_tmpl='azure.mgmt.synapse.operations#SqlPoolsOperations.{}',
         client_factory=cf_synapse_client_sqlpool_factory)
@@ -51,8 +53,6 @@ def load_command_table(self, _):
         operations_tmpl='azure.synapse.spark.operations#SparkBatchOperations.{}',
         client_factory=None)
 
-
-
     # Management Plane Commands --Workspace
     with self.command_group('synapse workspace', synapse_workspace_sdk,
                             client_factory=cf_synapse_client_workspace_factory) as g:
@@ -65,7 +65,7 @@ def load_command_table(self, _):
                          client_factory=cf_synapse_client_operations_factory)
         g.command('delete', 'delete', confirmation=True, supports_no_wait=True)
         g.wait_command('wait')
-        
+
     # Management Plane Commands --SparkPool
     with self.command_group('synapse spark pool', synapse_bigdatapool_sdk,
                             client_factory=cf_synapse_client_bigdatapool_factory) as g:
@@ -98,7 +98,7 @@ def load_command_table(self, _):
         g.wait_command('wait')
 
     # Data Plane Commands --Spark batch opertions
-    with self.command_group('synapse spark job', command_type=synapse_spark_batch_sdk, 
+    with self.command_group('synapse spark job', command_type=synapse_spark_batch_sdk,
                             custom_command_type=get_custom_sdk('spark', None)) as g:
         g.custom_command('submit', 'create_spark_batch_job')
         g.custom_command('list', 'list_spark_batch_jobs')
@@ -124,4 +124,3 @@ def load_command_table(self, _):
 
     with self.command_group('synapse', is_preview=True):
         pass
-
