@@ -275,6 +275,7 @@ class SynapseScenarioTests(ScenarioTest):
                                  self.check('state', 'waiting')
                              ]).get_output_in_json()
         self.kwargs['statement-id'] = statement['id']
+        time.sleep(10)
 
         # get a spark session statement
         self.cmd('az synapse spark statement show --livy-id {statement-id} --session-id {session-id} '

@@ -13,24 +13,24 @@ interactions:
       ParameterSetName:
       - --name --spark-version --workspace --resource-group --node-count --node-size
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace?api-version=2019-06-01-preview
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace","location":"eastus","name":"testsynapseworkspace","type":"Microsoft.Synapse/workspaces","identity":{"type":"SystemAssigned","principalId":"5c40eee1-1044-4ec5-9d56-bbbd73b93df0","tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"tags":{"key1":"value2"},"properties":{"connectivityEndpoints":{"web":"https://web.azuresynapse.net?workspace=%2fsubscriptions%2f051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3%2fresourceGroups%2frg%2fproviders%2fMicrosoft.Synapse%2fworkspaces%2ftestsynapseworkspace","sql":"testsynapseworkspace.sql.azuresynapse.net","dev":"https://testsynapseworkspace.dev.azuresynapse.net","sqlOnDemand":"testsynapseworkspace-ondemand.sql.azuresynapse.net"},"managedResourceGroupName":"workspacemanagedrg-cf1e0457-375a-4c2d-a9b4-51676e4fce7c","defaultDataLakeStorage":{"accountUrl":"https://adlsgen2account.dfs.core.windows.net","filesystem":"testfilesystem"},"sqlAdministratorLogin":"zzy","privateEndpointConnections":[],"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace","location":"eastus","name":"testsynapseworkspace","type":"Microsoft.Synapse/workspaces","identity":{"type":"SystemAssigned","principalId":"e64a6f06-c0ef-4564-ab5d-ac006d710db5","tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"},"tags":{},"properties":{"connectivityEndpoints":{"web":"https://web.azuresynapse.net?workspace=%2fsubscriptions%2f051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3%2fresourceGroups%2frg%2fproviders%2fMicrosoft.Synapse%2fworkspaces%2ftestsynapseworkspace","sql":"testsynapseworkspace.sql.azuresynapse.net","dev":"https://testsynapseworkspace.dev.azuresynapse.net","sqlOnDemand":"testsynapseworkspace-ondemand.sql.azuresynapse.net"},"managedResourceGroupName":"workspacemanagedrg-9f0b717c-759e-4465-871e-8ae6bb0e0727","defaultDataLakeStorage":{"accountUrl":"https://shangweiadlsgen2.dfs.core.windows.net","filesystem":"testsynapseworkspace"},"sqlAdministratorLogin":"sqladminuser","privateEndpointConnections":[],"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1113'
+      - '1125'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:17:53 GMT
+      - Wed, 22 Jul 2020 11:04:12 GMT
       expires:
       - '-1'
       pragma:
@@ -68,34 +68,34 @@ interactions:
       ParameterSetName:
       - --name --spark-version --workspace --resource-group --node-count --node-size
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001?api-version=2019-06-01-preview&force=false
   response:
     body:
-      string: '{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Provisioning"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools"}'
+      string: '{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Provisioning"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools"}'
     headers:
       access-control-allow-headers:
       - Location
       access-control-expose-headers:
       - Location
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/23d1af4a-7be3-4e08-a8c4-4439f2eb7ce0?api-version=2019-06-01-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/a31e4ff1-cce2-4db2-82fa-708dc753e2ed?api-version=2019-06-01-preview
       cache-control:
       - no-cache
       content-length:
-      - '545'
+      - '556'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:01 GMT
+      - Wed, 22 Jul 2020 11:04:18 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/23d1af4a-7be3-4e08-a8c4-4439f2eb7ce0?api-version=2019-06-01-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/a31e4ff1-cce2-4db2-82fa-708dc753e2ed?api-version=2019-06-01-preview
       pragma:
       - no-cache
       server:
@@ -123,10 +123,10 @@ interactions:
       ParameterSetName:
       - --name --spark-version --workspace --resource-group --node-count --node-size
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/23d1af4a-7be3-4e08-a8c4-4439f2eb7ce0?api-version=2019-06-01-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/a31e4ff1-cce2-4db2-82fa-708dc753e2ed?api-version=2019-06-01-preview
   response:
     body:
       string: '{"status":"Succeeded"}'
@@ -138,7 +138,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:33 GMT
+      - Wed, 22 Jul 2020 11:04:51 GMT
       expires:
       - '-1'
       pragma:
@@ -170,22 +170,22 @@ interactions:
       ParameterSetName:
       - --name --spark-version --workspace --resource-group --node-count --node-size
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001?api-version=2019-06-01-preview&force=false
   response:
     body:
-      string: '{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}'
+      string: '{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '562'
+      - '573'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:33 GMT
+      - Wed, 22 Jul 2020 11:04:51 GMT
       expires:
       - '-1'
       pragma:
@@ -217,24 +217,24 @@ interactions:
       ParameterSetName:
       - --name --workspace --resource-group
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001?api-version=2019-06-01-preview
   response:
     body:
-      string: '{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}'
+      string: '{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '562'
+      - '573'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:37 GMT
+      - Wed, 22 Jul 2020 11:04:54 GMT
       expires:
       - '-1'
       pragma:
@@ -266,24 +266,27 @@ interactions:
       ParameterSetName:
       - --workspace --resource-group
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools?api-version=2019-06-01-preview
   response:
     body:
-      string: '{"value":[{"properties":{"creationDate":"2020-04-27T07:29:39.3866667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testclipool11","name":"testclipool11","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-04-27T07:03:20.86Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testclipool6","name":"testclipool6","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-04-27T07:06:37.36Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":true,"minNodeCount":3,"maxNodeCount":200},"autoPause":{"enabled":true,"delayInMinutes":15},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testclipool7","name":"testclipool7","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-04-27T07:10:40.9733333Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":true,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":15},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testclipool8","name":"testclipool8","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-04-27T07:49:58.43Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":true,"delayInMinutes":15},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testportal","name":"testportal","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus","tags":{}},{"properties":{"creationDate":"2020-04-14T04:16:11.72Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":true,"delayInMinutes":15},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testsparkpool","name":"testsparkpool","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus","tags":{"key2":"value2"}}]}'
+      string: '{"value":[{"properties":{"creationDate":"2020-07-14T06:55:18.6333333Z","sparkVersion":"2.4","nodeCount":0,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":true,"minNodeCount":3,"maxNodeCount":40},"autoPause":{"enabled":true,"delayInMinutes":15},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/sparkpoolcli","name":"sparkpoolcli","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus","tags":{}},{"properties":{"creationDate":"2020-07-15T05:48:35.2066667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testcreate","name":"testcreate","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-07-15T06:00:03.2933333Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"libraryRequirements":{"filename":"C:\\Users\\shangsu\\requirements.txt","content":"#
+        basic\r\nsetuptools==40.0.0\r\npip>=9.0.1","time":"2020-07-15T06:00:03.3004196Z"},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testcreatefile","name":"testcreatefile","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-07-15T09:02:00.9Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"libraryRequirements":{"filename":"C:\\Users\\shangsu\\requirements.txt","content":"#
+        basic\r\nsetuptools==40.0.0\r\npip>=9.0.1","time":"2020-07-15T09:02:00.9000871Z"},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testdebug","name":"testdebug","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"},{"properties":{"creationDate":"2020-07-14T09:41:26.62Z","sparkVersion":"2.4","nodeCount":0,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":true,"minNodeCount":3,"maxNodeCount":40},"autoPause":{"enabled":true,"delayInMinutes":15},"libraryRequirements":{"filename":"requirements.txt","content":"#
+        basic\r\nsetuptools==40.0.0\r\npip>=9.0.1","time":"2020-07-14T09:41:26.623672Z"},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testlibrary","name":"testlibrary","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus","tags":{}},{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}]}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3855'
+      - '3909'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:39 GMT
+      - Wed, 22 Jul 2020 11:04:55 GMT
       expires:
       - '-1'
       pragma:
@@ -315,24 +318,24 @@ interactions:
       ParameterSetName:
       - --ids --tags
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001?api-version=2019-06-01-preview
   response:
     body:
-      string: '{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}'
+      string: '{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus"}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '562'
+      - '573'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:41 GMT
+      - Wed, 22 Jul 2020 11:04:57 GMT
       expires:
       - '-1'
       pragma:
@@ -353,7 +356,7 @@ interactions:
 - request:
     body: '{"tags": {"key1": "value1"}, "location": "eastus", "properties": {"provisioningState":
       "Succeeded", "autoScale": {"minNodeCount": 0, "enabled": false, "maxNodeCount":
-      0}, "creationDate": "2020-04-27T12:18:01.300Z", "autoPause": {"delayInMinutes":
+      0}, "creationDate": "2020-07-22T11:04:19.226666Z", "autoPause": {"delayInMinutes":
       0, "enabled": false}, "nodeCount": 3, "sparkVersion": "2.4", "nodeSize": "Medium",
       "nodeSizeFamily": "MemoryOptimized"}}'
     headers:
@@ -366,40 +369,40 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '367'
+      - '370'
       Content-Type:
       - application/json; charset=utf-8
       ParameterSetName:
       - --ids --tags
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: PUT
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001?api-version=2019-06-01-preview&force=false
   response:
     body:
-      string: '{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Provisioning"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","tags":{"key1":"value1"}}'
+      string: '{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Provisioning"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","tags":{"key1":"value1"}}'
     headers:
       access-control-allow-headers:
       - Location
       access-control-expose-headers:
       - Location
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/2d4a5fa4-aa8e-44a7-b22c-899e825e5372?api-version=2019-06-01-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/c4a092de-73a8-4766-8d36-1a22198b5927?api-version=2019-06-01-preview
       cache-control:
       - no-cache
       content-length:
-      - '570'
+      - '581'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:18:44 GMT
+      - Wed, 22 Jul 2020 11:05:00 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/2d4a5fa4-aa8e-44a7-b22c-899e825e5372?api-version=2019-06-01-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/c4a092de-73a8-4766-8d36-1a22198b5927?api-version=2019-06-01-preview
       pragma:
       - no-cache
       server:
@@ -427,10 +430,10 @@ interactions:
       ParameterSetName:
       - --ids --tags
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/2d4a5fa4-aa8e-44a7-b22c-899e825e5372?api-version=2019-06-01-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationStatuses/c4a092de-73a8-4766-8d36-1a22198b5927?api-version=2019-06-01-preview
   response:
     body:
       string: '{"status":"Succeeded"}'
@@ -442,7 +445,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:19:18 GMT
+      - Wed, 22 Jul 2020 11:05:31 GMT
       expires:
       - '-1'
       pragma:
@@ -474,22 +477,22 @@ interactions:
       ParameterSetName:
       - --ids --tags
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
     method: GET
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001?api-version=2019-06-01-preview&force=false
   response:
     body:
-      string: '{"properties":{"creationDate":"2020-04-27T12:18:01.3Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus","tags":{"key1":"value1"}}'
+      string: '{"properties":{"creationDate":"2020-07-22T11:04:19.2266667Z","sparkVersion":"2.4","nodeCount":3,"nodeSize":"Medium","nodeSizeFamily":"MemoryOptimized","autoScale":{"enabled":false,"minNodeCount":0,"maxNodeCount":0},"autoPause":{"enabled":false,"delayInMinutes":0},"provisioningState":"Succeeded"},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001","name":"testpool000001","type":"Microsoft.Synapse/workspaces/bigDataPools","location":"eastus","tags":{"key1":"value1"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '587'
+      - '598'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:19:19 GMT
+      - Wed, 22 Jul 2020 11:05:31 GMT
       expires:
       - '-1'
       pragma:
@@ -523,8 +526,8 @@ interactions:
       ParameterSetName:
       - --name --workspace --resource-group --yes
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: DELETE
@@ -542,11 +545,11 @@ interactions:
       content-length:
       - '0'
       date:
-      - Mon, 27 Apr 2020 12:19:23 GMT
+      - Wed, 22 Jul 2020 11:05:35 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/f81ee113-912a-4f30-9f1f-97bd5c98c829?api-version=2019-06-01-preview
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/52d8bf72-664f-422b-94d7-229440859d52?api-version=2019-06-01-preview
       pragma:
       - no-cache
       server:
@@ -574,10 +577,10 @@ interactions:
       ParameterSetName:
       - --name --workspace --resource-group --yes
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/f81ee113-912a-4f30-9f1f-97bd5c98c829?api-version=2019-06-01-preview
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg/providers/Microsoft.Synapse/workspaces/testsynapseworkspace/operationResults/52d8bf72-664f-422b-94d7-229440859d52?api-version=2019-06-01-preview
   response:
     body:
       string: ''
@@ -585,7 +588,7 @@ interactions:
       cache-control:
       - no-cache
       date:
-      - Mon, 27 Apr 2020 12:19:55 GMT
+      - Wed, 22 Jul 2020 11:06:06 GMT
       expires:
       - '-1'
       pragma:
@@ -613,8 +616,8 @@ interactions:
       ParameterSetName:
       - --name --workspace --resource-group
       User-Agent:
-      - python/3.7.4 (Windows-10-10.0.18362-SP0) msrest/0.6.11 msrest_azure/0.6.2
-        azure-mgmt-synapse/0.2.0 Azure-SDK-For-Python AZURECLI/2.1.0
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-mgmt-synapse/0.3.0
+        Azure-SDK-For-Python AZURECLI/2.8.0
       accept-language:
       - en-US
     method: GET
@@ -622,16 +625,17 @@ interactions:
   response:
     body:
       string: '{"error":{"code":"ResourceNotFound","message":"The Resource ''Microsoft.Synapse/workspaces/testsynapseworkspace/bigDataPools/testpool000001''
-        under resource group ''rg'' was not found."}}'
+        under resource group ''rg'' was not found. For more details
+        please go to https://aka.ms/ARMResourceNotFoundFix"}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '193'
+      - '266'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Mon, 27 Apr 2020 12:19:58 GMT
+      - Wed, 22 Jul 2020 11:06:08 GMT
       expires:
       - '-1'
       pragma:
