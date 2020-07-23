@@ -37,12 +37,12 @@ def synapse_spark_factory(cli_ctx, workspace_name, sparkpool_name):
     subscription_id = get_subscription_id(cli_ctx)
     profile = Profile(cli_ctx=cli_ctx)
     cred, _, _ = profile.get_login_credentials(
-        resource="https://dev.azuresynapse.net",
+        resource=cli_ctx.cloud.endpoints.synapse_analytics_resource_id,
         subscription_id=subscription_id
     )
     return SparkClient(
         credential=cred,
-        endpoint='{}{}.{}'.format("https://", workspace_name, 'dev.azuresynapse.net'),
+        endpoint='{}{}{}'.format("https://", workspace_name, cli_ctx.cloud.suffixes.azure_synapse_analytics_endpoint),
         spark_pool_name=sparkpool_name
     )
 
