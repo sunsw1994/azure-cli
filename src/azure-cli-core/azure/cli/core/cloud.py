@@ -218,7 +218,6 @@ def _arm_to_cli_mapper(arm_dict):
             azure_synapse_analytics_endpoint=arm_dict['suffixes']['synapseAnalytics'] if 'synapseAnalytics' in arm_dict['suffixes'] else None)) # pylint: disable=line-too-long
 
 
-
 class Cloud(object):  # pylint: disable=too-few-public-methods
     """ Represents an Azure Cloud instance """
 
