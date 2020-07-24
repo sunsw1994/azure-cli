@@ -47,7 +47,7 @@ def load_command_table(self, _):
 
     synapse_spark_session_sdk = CliCommandType(
         operations_tmpl='azure.synapse.spark.operations#SparkSessionOperations.{}',
-        client_factory=cf_synapse_spark_session)
+        client_factory=None)
 
     synapse_spark_batch_sdk = CliCommandType(
         operations_tmpl='azure.synapse.spark.operations#SparkBatchOperations.{}',
