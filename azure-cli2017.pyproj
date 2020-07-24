@@ -946,7 +946,7 @@
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\spark.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\sparkpool.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\workspace.py" />
-    <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\spark.py" />
+    <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\sqlpool.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\tests\latest\test_synapse_scenario.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\vm\commands.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\vm\custom.py" />
