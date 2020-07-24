@@ -943,7 +943,9 @@
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\__init__.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\commands.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\constant.py" />
-    <Compile Include="azure-cli\azure\cli\command_modules\synapse\custom.py" />
+    <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\spark.py" />
+    <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\sparkpool.py" />
+    <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\workspace.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\operations\spark.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\synapse\tests\latest\test_synapse_scenario.py" />
     <Compile Include="azure-cli\azure\cli\command_modules\vm\commands.py" />
@@ -1146,7 +1148,6 @@
     <Folder Include="azure-cli\azure\cli\command_modules\network\tests\latest\" />
     <Folder Include="azure-cli\azure\cli\command_modules\network\tests\latest\zone_files\" />
     <Folder Include="azure-cli\azure\cli\command_modules\network\zone_file\" />
-    <Folder Include="azure-cli\azure\cli\command_modules\synapse\" />
     <Folder Include="azure-cli\azure\cli\command_modules\policyinsights\" />
     <Folder Include="azure-cli\azure\cli\command_modules\policyinsights\tests\" />
     <Folder Include="azure-cli\azure\cli\command_modules\policyinsights\tests\latest\" />
@@ -1205,9 +1206,10 @@
     <Folder Include="azure-cli\azure\cli\command_modules\storage\operations\" />
     <Folder Include="azure-cli\azure\cli\command_modules\storage\tests\" />
     <Folder Include="azure-cli\azure\cli\command_modules\storage\tests\latest\" />
-    <Folder Include="azure-cli\azure\cli\command_modules\Synapse\tests\" />
-    <Folder Include="azure-cli\azure\cli\command_modules\Synapse\tests\latest\" />
-    <Folder Include="azure-cli\azure\cli\command_modules\Synapse\operations\" />
+    <Folder Include="azure-cli\azure\cli\command_modules\synapse\" />
+    <Folder Include="azure-cli\azure\cli\command_modules\synapse\operations\" />
+    <Folder Include="azure-cli\azure\cli\command_modules\synapse\tests\" />
+    <Folder Include="azure-cli\azure\cli\command_modules\synapse\tests\latest\" />
     <Folder Include="azure-cli\azure\cli\command_modules\vm\" />
     <Folder Include="azure-cli\azure\cli\command_modules\vm\tests\" />
     <Folder Include="azure-cli\azure\cli\command_modules\vm\tests\latest\" />

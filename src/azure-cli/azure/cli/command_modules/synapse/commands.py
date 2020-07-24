@@ -54,7 +54,8 @@ def load_command_table(self, _):
         client_factory=None)
 
     # Management Plane Commands --Workspace
-    with self.command_group('synapse workspace', synapse_workspace_sdk,
+    with self.command_group('synapse workspace', command_type=synapse_workspace_sdk,
+                            custom_command_type=get_custom_sdk('workspace', cf_synapse_client_ipfirewallrules_factory),
                             client_factory=cf_synapse_client_workspace_factory) as g:
         g.show_command('show', 'get')
         g.custom_command('list', 'list_workspaces')
@@ -67,7 +68,8 @@ def load_command_table(self, _):
         g.wait_command('wait')
 
     # Management Plane Commands --SparkPool
-    with self.command_group('synapse spark pool', synapse_bigdatapool_sdk,
+    with self.command_group('synapse spark pool', command_type=synapse_bigdatapool_sdk,
+                            custom_command_type=get_custom_sdk('sparkpool', cf_synapse_client_ipfirewallrules_factory),
                             client_factory=cf_synapse_client_bigdatapool_factory) as g:
         g.custom_show_command('show', 'get_spark_pool')
         g.command('list', 'list_by_workspace')
@@ -77,7 +79,8 @@ def load_command_table(self, _):
         g.wait_command('wait')
 
     # Management Plane Commands --SqlPool
-    with self.command_group('synapse sql pool', synapse_sqlpool_sdk,
+    with self.command_group('synapse sql pool', command_type=synapse_sqlpool_sdk,
+                            custom_command_type=get_custom_sdk('sqlpool', cf_synapse_client_ipfirewallrules_factory),
                             client_factory=cf_synapse_client_sqlpool_factory) as g:
         g.show_command('show', 'get')
         g.command('list', 'list_by_workspace')
@@ -89,7 +92,8 @@ def load_command_table(self, _):
         g.wait_command('wait')
 
     # Management Plane Commands --FirewallRule
-    with self.command_group('synapse workspace firewall-rule', synapse_firewallrules_sdk,
+    with self.command_group('synapse workspace firewall-rule', command_type=synapse_firewallrules_sdk,
+                            custom_command_type=get_custom_sdk('workspace', cf_synapse_client_ipfirewallrules_factory),
                             client_factory=cf_synapse_client_ipfirewallrules_factory) as g:
         g.command('list', 'list_by_workspace')
         g.show_command('show', 'get')
@@ -105,7 +109,7 @@ def load_command_table(self, _):
         g.custom_show_command('show', 'get_spark_batch_job')
         g.custom_command('cancel', 'cancel_spark_batch_job', confirmation=True)
 
-    # Spark session operations
+    # Data Plane Commands --Spark session operations
     with self.command_group('synapse spark session', synapse_spark_session_sdk,
                             custom_command_type=get_custom_sdk('spark', None)) as g:
         g.custom_command('create', 'create_spark_session_job')
@@ -114,7 +118,7 @@ def load_command_table(self, _):
         g.custom_command('cancel', 'cancel_spark_session_job', confirmation=True)
         g.custom_command('reset-timeout', 'reset_timeout')
 
-    # Spark session statements operations
+    # Data Plane Commands --Spark session statements operations
     with self.command_group('synapse spark statement', synapse_spark_session_sdk,
                             custom_command_type=get_custom_sdk('spark', None)) as g:
         g.custom_command('invoke', 'create_spark_session_statement')
