@@ -6,10 +6,8 @@
 from knack.util import CLIError
 from .._client_factory import cf_synapse_client_workspace_factory
 from azure.cli.core.util import sdk_no_wait, read_file_content
-from azure.mgmt.synapse.models import Workspace, WorkspacePatchInfo, ManagedIdentity, \
-    DataLakeStorageAccountDetails, \
-    BigDataPoolResourceInfo, AutoScaleProperties, AutoPauseProperties, LibraryRequirements, NodeSizeFamily, \
-    SqlPool, SqlPoolPatchInfo, Sku
+from azure.mgmt.synapse.models import BigDataPoolResourceInfo, AutoScaleProperties, AutoPauseProperties, \
+                                LibraryRequirements, NodeSizeFamily
 
 
 # Synapse sparkpool

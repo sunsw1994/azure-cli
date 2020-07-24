@@ -7,8 +7,7 @@ from knack.util import CLIError
 from .._client_factory import cf_synapse_client_workspace_factory
 from ..constant import SynapseSqlCreateMode
 from azure.cli.core.util import sdk_no_wait, read_file_content
-from azure.mgmt.synapse.models import Workspace, DataLakeStorageAccountDetails, \
-    SqlPool, SqlPoolPatchInfo, Sku
+from azure.mgmt.synapse.models import SqlPool, SqlPoolPatchInfo, Sku
 
 
 # Synapse sqlpool
