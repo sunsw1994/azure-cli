@@ -1462,6 +1462,9 @@
     <Content Include="azure-cli\linter_exclusions.yml" />
     <Content Include="azure-cli\MANIFEST.in" />
     <Content Include="azure-cli\README.rst" />
+    <Content Include="azure-cli\requirements.py2.darwin.txt" />
+    <Content Include="azure-cli\requirements.py2.linux.txt" />
+    <Content Include="azure-cli\requirements.py2.windows.txt" />
     <Content Include="azure-cli\requirements.py3.darwin.txt" />
     <Content Include="azure-cli\requirements.py3.linux.txt" />
     <Content Include="azure-cli\requirements.py3.windows.txt" />
