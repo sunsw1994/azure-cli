@@ -6,6 +6,7 @@
 
 from msrestazure.tools import is_valid_resource_id
 from azure.cli.core.commands.parameters import get_resources_in_subscription  # pylint: disable=unused-import
+from azure.cli.core.util import is_guid
 
 
 def validate_storage_account(namespace):

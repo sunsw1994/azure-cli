@@ -426,3 +426,91 @@ examples:
         az synapse spark statement cancel --livy-id 1 --session-id 11 --workspace-name testsynapseworkspace \\
         --spark-pool-name testsparkpool
 """
+
+helps['synapse role assignment'] = """
+type: group
+short-summary:  Manage a workspace's role assignments.
+"""
+
+helps['synapse role assignment show'] = """
+type: command
+short-summary: Get a role assignment.
+examples:
+  - name: Get a role assignment.
+    text: |-
+        az synapse role assignment show --workspace-name testsynapseworkspace \\
+        --role-assignment-id 00000000-0000-0000-0000-000000000000
+"""
+
+helps['synapse role assignment list'] = """
+type: command
+short-summary: List role assignments of specific workspace.
+examples:
+  - name: List role assignments of specific workspace.
+    text: |-
+        az synapse role assignment list --workspace-name testsynapseworkspace
+  - name: List role assignments of specific workspace by role name.
+    text: |-
+        az synapse role assignment list --workspace-name testsynapseworkspace \\
+        --role "Sql Admin"
+  - name: List role assignments of specific workspace by service principal name.
+    text: |-
+        az synapse role assignment list --workspace-name testsynapseworkspace \\
+        --service-principal-name http://testspname
+  - name: List role assignments of specific workspace by objectId of the User, Group or Service Principal.
+    text: |-
+        az synapse role assignment list --workspace-name testsynapseworkspace \\
+        --object-id 00000000-0000-0000-0000-000000000000
+"""
+
+helps['synapse role assignment create'] = """
+type: command
+short-summary: Create role assignment for specific workspace.
+examples:
+  - name: Create role assignment for specific workspace using service principal name.
+    text: |-
+        az synapse role assignment create --workspace-name testsynapseworkspace \\
+        --role "Sql Admin" --service-principal-name http://testspname
+  - name: Create role assignment for specific workspace using user principal name.
+    text: |-
+        az synapse role assignment create --workspace-name testsynapseworkspace \\
+        --role "Sql Admin" --user-principal-name username@consoso.com
+  - name: Create role assignment for specific workspace using objectId of the User, Group or Service Principal.
+    text: |-
+        az synapse role assignment create --workspace-name testsynapseworkspace \\
+        --role "Sql Admin" --object-id 00000000-0000-0000-0000-000000000000
+"""
+
+helps['synapse role assignment delete'] = """
+type: command
+short-summary: Delete specific role assignment of workspace.
+examples:
+  - name: Delete specific role assignment of workspace.
+    text: |-
+        az synapse role assignment delete --workspace-name testsynapseworkspace \\
+        --role-assignment-id 00000000-0000-0000-0000-000000000000
+"""
+
+helps['synapse role definition'] = """
+type: group
+short-summary:  Manage a workspace's role definitions.
+"""
+
+helps['synapse role definition list'] = """
+type: command
+short-summary: List role definitions of specific workspace.
+examples:
+  - name: List role definitions of specific workspace.
+    text: |-
+        az synapse role definition list --workspace-name testsynapseworkspace
+"""
+
+helps['synapse role definition show'] = """
+type: command
+short-summary: Get role definition by role id/name.
+examples:
+  - name: Get role definition by role id.
+    text: |-
+        az synapse role definition show --workspace-name testsynapseworkspace \\
+        --role 00000000-0000-0000-0000-000000000000
+"""

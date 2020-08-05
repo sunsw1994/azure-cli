@@ -10,6 +10,7 @@ from azure.mgmt.synapse.models import Workspace, WorkspacePatchInfo, ManagedIden
     DataLakeStorageAccountDetails \
 
 
+
 # Synapse workspace
 def list_workspaces(cmd, client, resource_group_name=None):  # pylint: disable=unused-argument
     return client.list_by_resource_group(

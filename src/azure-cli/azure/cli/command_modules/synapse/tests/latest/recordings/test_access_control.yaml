@@ -1,0 +1,623 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roles?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"value":[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","name":"Workspace
+        Admin","isBuiltIn":true},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","name":"Apache
+        Spark Admin","isBuiltIn":true},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","name":"Sql
+        Admin","isBuiltIn":true}]}'
+    headers:
+      content-length:
+      - '272'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:12:55 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roles?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"value":[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","name":"Workspace
+        Admin","isBuiltIn":true},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","name":"Apache
+        Spark Admin","isBuiltIn":true},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","name":"Sql
+        Admin","isBuiltIn":true}]}'
+    headers:
+      content-length:
+      - '272'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:12:56 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roles/7af0c69a-a548-47d6-aea3-d00e69bd83aa?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","name":"Sql Admin","isBuiltIn":true}'
+    headers:
+      content-length:
+      - '81'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:12:57 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roles?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"value":[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","name":"Workspace
+        Admin","isBuiltIn":true},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","name":"Apache
+        Spark Admin","isBuiltIn":true},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","name":"Sql
+        Admin","isBuiltIn":true}]}'
+    headers:
+      content-length:
+      - '272'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:12:58 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - synapse role assignment create
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --workspace-name --role --user-principal-name
+      User-Agent:
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-graphrbac/0.60.0
+        Azure-SDK-For-Python AZURECLI/2.10.0
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/users/shangsu%40microsoft.com?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects/@Element","odata.type":"Microsoft.DirectoryServices.User","objectType":"User","objectId":"6ae2ff4b-4939-4952-a097-d234aad383a3","deletionTimestamp":null,"accountEnabled":true,"ageGroup":null,"assignedLicenses":[{"disabledPlans":["b21a6b06-1988-436e-a07b-51ec6d9f52ad","531ee2f8-b1cb-453b-9c21-d2180d014ca5","bf28f719-7844-4079-9c78-c1307898e192","28b0fa46-c39a-4188-89e2-58e979a6b014","199a5c09-e0ca-4e37-8f7c-b05d533e1ea2","65cc641f-cccd-4643-97e0-a17e3045e541","e26c2fcc-ab91-4a61-b35c-03cdc8dddf66","46129a58-a698-46f0-aa5b-17f6586297d9","6db1f1db-2b46-403f-be40-e39395f08dbb","6dc145d6-95dd-4191-b9c3-185575ee6f6b","41fcdd7d-4733-4863-9cf4-c65b83ce2df4","2f442157-a11c-46b9-ae5b-6e39ff4e5849","c4801e8a-cb58-4c35-aca6-f2dcc106f287","0898bdbb-73b0-471a-81e5-20f1fe4dd66e","617b097b-4b93-4ede-83de-5f075bb5fb2f","33c4f319-9bdd-48d6-9c4d-410b750a4a5a","8e0c0a52-6a6c-4d40-8370-dd62790dcd70","4828c8ec-dc2e-4779-b502-87ac9ce28ab7","3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40"],"skuId":"c7df2760-2c81-4ef7-b578-5b5392b571df"},{"disabledPlans":[],"skuId":"9f3d9c1d-25a5-4aaa-8e59-23a1e6450a67"},{"disabledPlans":[],"skuId":"26a18e8f-4d14-46f8-835a-ed3ba424a961"},{"disabledPlans":[],"skuId":"412ce1a7-a499-41b3-8eb6-b38f2bbc5c3f"},{"disabledPlans":["39b5c996-467e-4e60-bd62-46066f572726"],"skuId":"90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"},{"disabledPlans":[],"skuId":"c5928f49-12ba-48f7-ada3-0d743a3601d5"},{"disabledPlans":[],"skuId":"b05e124f-c7cc-45a0-a6aa-8cf78c946968"},{"disabledPlans":["e95bec33-7c88-4a70-8e19-b10bd9d0c014","5dbe027f-2339-4123-9542-606e4d348a72"],"skuId":"09015f9f-377f-4538-bbb5-f75ceb09358a"},{"disabledPlans":[],"skuId":"488ba24a-39a9-4473-8ee5-19291e71b002"},{"disabledPlans":["0b03f40b-c404-40c3-8651-2aceb74365fa","b650d915-9886-424b-a08d-633cede56f57","e95bec33-7c88-4a70-8e19-b10bd9d0c014","5dbe027f-2339-4123-9542-606e4d348a72","fe71d6c3-a2ea-4499-9778-da042bf08063","fafd7243-e5c1-4a3a-9e40-495efcb1d3c3"],"skuId":"ea126fc5-a19e-42e2-a731-da9d437bffcf"}],"assignedPlans":[{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"fe71d6c3-a2ea-4499-9778-da042bf08063"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"199a5c09-e0ca-4e37-8f7c-b05d533e1ea2"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"e95bec33-7c88-4a70-8e19-b10bd9d0c014"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"5dbe027f-2339-4123-9542-606e4d348a72"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"MicrosoftOffice","servicePlanId":"fafd7243-e5c1-4a3a-9e40-495efcb1d3c3"},{"assignedTimestamp":"2020-06-18T16:18:34Z","capabilityStatus":"Enabled","service":"MicrosoftPrint","servicePlanId":"795f6fe0-cc4d-4773-b050-5dde4dc704c9"},{"assignedTimestamp":"2020-04-04T16:06:17Z","capabilityStatus":"Enabled","service":"MicrosoftCommunicationsOnline","servicePlanId":"018fb91e-cee3-418c-9063-d7562978bdaf"},{"assignedTimestamp":"2020-04-04T16:06:16Z","capabilityStatus":"Enabled","service":"MicrosoftCommunicationsOnline","servicePlanId":"ca4be917-fbce-4b52-839e-6647467a1668"},{"assignedTimestamp":"2020-04-03T23:33:35Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"9f431833-0334-42de-a7dc-70aa40db46db"},{"assignedTimestamp":"2020-04-03T23:33:35Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"efb87545-963c-4e0d-99df-69c6916d9eb0"},{"assignedTimestamp":"2020-04-03T23:33:35Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"34c0d7a0-a70f-4668-9238-47f9fc208882"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftCommunicationsOnline","servicePlanId":"0feaeb32-d00e-4d66-bd5a-43b5b83db82c"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProcessSimple","servicePlanId":"07699545-9485-468e-95b6-2fca3738be01"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Adallom","servicePlanId":"8c098270-9dd4-4350-9b30-ba4703f3b36b"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"b1188c4c-1b36-4018-b48b-ee07604f6feb"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftStream","servicePlanId":"6c6042f5-6f01-4d67-b8c1-eb99d36eed3e"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"AADPremiumService","servicePlanId":"41781fb2-bc02-4b7c-bd55-b576c07bb09d"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Sway","servicePlanId":"a23b959c-7ce8-4e57-9140-b90eb88a9e97"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"5136a095-5cf0-4aff-bec3-e84448b38ea5"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"PowerBI","servicePlanId":"70d33638-9c74-4d01-bfd3-562de28bd4ba"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProjectWorkManagement","servicePlanId":"b737dad2-2f6c-4c65-90e3-ca563267e8b9"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"RMSOnline","servicePlanId":"bea4c11e-220a-4e6d-8eb8-8ea15d019f90"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"AADPremiumService","servicePlanId":"eec0eb4f-6444-4f95-aba0-50c24d67f998"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProjectProgramsAndPortfolios","servicePlanId":"818523f5-016b-4355-9be8-ed6944946ea7"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"OfficeForms","servicePlanId":"e212cbc7-0961-4c40-9825-01117710dcb1"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"4de31727-a228-4ec3-a5bf-8e45b5ca48cc"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"SCO","servicePlanId":"c1ec4a95-1f05-45b3-a911-aa3fa01094f5"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"2bdbaf8f-738f-4ac7-9234-3c3ee2ce7d0f"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftOffice","servicePlanId":"663a804f-1c30-4ff0-9915-9db84f0d1cea"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"TeamspaceAPI","servicePlanId":"57ff2da0-773e-42df-b2af-ffb7a2317929"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"AzureAdvancedThreatAnalytics","servicePlanId":"14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"PowerAppsService","servicePlanId":"9c0dab89-a30c-4117-86e7-97bda240acd2"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"efb0351d-3b08-4503-993d-383af8de41e3"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"da792a53-cbc0-4184-a10d-e544dd34b3c1"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Deskless","servicePlanId":"8c7d2df8-86f0-4902-b2ed-a0458298f3b3"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"RMSOnline","servicePlanId":"6c57d4b6-3b23-47a5-9bc9-69f17b4947b3"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MultiFactorService","servicePlanId":"8a256a2b-b617-496d-b51b-e76466e88db0"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProcessSimple","servicePlanId":"fa200448-008c-4acb-abd4-ea106ed2199d"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"To-Do","servicePlanId":"3fb82609-8c27-4f7b-bd51-30634711ee67"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"RMSOnline","servicePlanId":"5689bec4-755d-4753-8b61-40975025187c"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"YammerEnterprise","servicePlanId":"7547a3fe-08ee-4ccb-b430-5077c5041653"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"WhiteboardServices","servicePlanId":"4a51bca5-1eff-43f5-878c-177680f191af"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftOffice","servicePlanId":"43de0ff5-c92c-492b-9116-175376d08c38"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"CRM","servicePlanId":"50554c47-71d9-49fd-bc54-42a2765c555c"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Adallom","servicePlanId":"2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2"},{"assignedTimestamp":"2020-04-02T22:13:18Z","capabilityStatus":"Enabled","service":"WindowsDefenderATP","servicePlanId":"871d91ec-ec1a-452b-a83f-bd76c7d770ef"},{"assignedTimestamp":"2020-04-02T22:13:18Z","capabilityStatus":"Enabled","service":"Windows","servicePlanId":"e7c91390-7625-45be-94e0-e16907e03118"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"Netbreeze","servicePlanId":"03acaee3-9492-4f40-aed4-bcb6b32981b6"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"DYN365AISERVICEINSIGHTS","servicePlanId":"1412cdc1-d593-4ad1-9050-40c30ad0b023"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"CRM","servicePlanId":"d56f3deb-50d8-465a-bedb-f079817ccac1"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"MicrosoftFormsProTest","servicePlanId":"97f29a83-1a20-44ff-bf48-5e4ad11f3e51"}],"city":"Beijing","companyName":"MICROSOFT
+        CHINA CO LTD","consentProvidedForMinor":null,"country":null,"createdDateTime":"2020-04-02T22:08:08Z","creationType":null,"department":"COGS
+        Data China - Cosmos","dirSyncEnabled":true,"displayName":"Shangwei Sun","employeeId":null,"facsimileTelephoneNumber":null,"givenName":"Shangwei","immutableId":"1362023","isCompromised":null,"jobTitle":"SOFTWARE
+        ENGINEER","lastDirSyncTime":"2020-07-11T14:19:07Z","legalAgeGroupClassification":null,"mail":"Shangwei.Sun@microsoft.com","mailNickname":"shangsu","mobile":null,"onPremisesDistinguishedName":"CN=Shangwei
+        Sun,OU=UserAccounts,DC=fareast,DC=corp,DC=microsoft,DC=com","onPremisesSecurityIdentifier":"S-1-5-21-2146773085-903363285-719344707-2611871","otherMails":[],"passwordPolicies":"DisablePasswordExpiration","passwordProfile":null,"physicalDeliveryOfficeName":"BEIJING-BJW-1/Mobile","postalCode":null,"preferredLanguage":null,"provisionedPlans":[{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"MicrosoftCommunicationsOnline"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"MicrosoftCommunicationsOnline"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"CRM"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"MicrosoftCommunicationsOnline"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"CRM"}],"provisioningErrors":[],"proxyAddresses":["smtp:shangsu@service.microsoft.com","SMTP:Shangwei.Sun@microsoft.com","smtp:shangsu@microsoft.com","x500:/o=ExchangeLabs/ou=Exchange
+        Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=21fc8adf871949299627d16e1cfd00b9-Shangwei
+        Su","X500:/o=microsoft/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f52eb0a1987547c3890c81ead532a38e-Shangwei
+        Sun","X500:/o=microsoft/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0eb89b67c7094ea6a49396dcd00388d3-Shangwei
+        Sun","smtp:t-shasun@microsoft.onmicrosoft.com"],"refreshTokensValidFromDateTime":"2020-04-03T06:12:44Z","showInAddressList":null,"signInNames":[],"sipProxyAddress":"shangsu@microsoft.com","state":null,"streetAddress":null,"surname":"Sun","telephoneNumber":"+86
+        (10) 59175933","thumbnailPhoto@odata.mediaEditLink":"directoryObjects/6ae2ff4b-4939-4952-a097-d234aad383a3/Microsoft.DirectoryServices.User/thumbnailPhoto","usageLocation":"CN","userIdentities":[],"userPrincipalName":"shangsu@microsoft.com","userState":null,"userStateChangedOn":null,"userType":"Member","extension_18e31482d3fb4a8ea958aa96b662f508_BuildingName":"MOBILE","extension_18e31482d3fb4a8ea958aa96b662f508_BuildingID":"99998","extension_18e31482d3fb4a8ea958aa96b662f508_ReportsToPersonnelNbr":"1251974","extension_18e31482d3fb4a8ea958aa96b662f508_ReportsToFullName":"Zhao,
+        Xue Shan","extension_18e31482d3fb4a8ea958aa96b662f508_ReportsToEmailName":"XUZHAO","extension_18e31482d3fb4a8ea958aa96b662f508_PositionNumber":"91975828","extension_18e31482d3fb4a8ea958aa96b662f508_SupervisorInd":"N","extension_18e31482d3fb4a8ea958aa96b662f508_ProfitCenterCode":"P10156563","extension_18e31482d3fb4a8ea958aa96b662f508_LocationAreaCode":"CN","extension_18e31482d3fb4a8ea958aa96b662f508_CostCenterCode":"10156563","extension_18e31482d3fb4a8ea958aa96b662f508_CompanyCode":"1107","extension_18e31482d3fb4a8ea958aa96b662f508_PersonnelNumber":"1362023"}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '14449'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Wed, 05 Aug 2020 08:12:59 GMT
+      duration:
+      - '831259'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - ZicJAeTqdlzVTsWBVM/sjKY5cdf4feudtNXDcT5oTWw=
+      ocp-aad-session-key:
+      - 0I_2oYB611QCFijf1D5WTGHUNqQ955k1vLhMalUJkS1plyhPczQSVN9NoIRmcQIAI8-p2LXGcw9HFNmmSnmj9HvthA4Lf98Nq7ywEFqK6AHTBeDrMUAl_9c7lDjLjBiH.JvQifh_JdKRK-EWtgGo38KYZ1Py2sMlkmJp3QGbdceA
+      pragma:
+      - no-cache
+      request-id:
+      - 14eb95c7-31f8-4a01-897b-6cf74a184599
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-ms-resource-unit:
+      - '1'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"roleId": "7af0c69a-a548-47d6-aea3-d00e69bd83aa", "principalId": "6ae2ff4b-4939-4952-a097-d234aad383a3"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '105'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: POST
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"}'
+    headers:
+      content-length:
+      - '183'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:00 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments/7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"}'
+    headers:
+      content-length:
+      - '183'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:01 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roles?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"value":[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","name":"Workspace
+        Admin","isBuiltIn":true},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","name":"Apache
+        Spark Admin","isBuiltIn":true},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","name":"Sql
+        Admin","isBuiltIn":true}]}'
+    headers:
+      content-length:
+      - '272'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:01 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0 Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments?api-version=2020-02-01-preview&roleId=7af0c69a-a548-47d6-aea3-d00e69bd83aa
+  response:
+    body:
+      string: '[{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"}]'
+    headers:
+      content-length:
+      - '369'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:03 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ms-continuation:
+      - ''
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - synapse role assignment list
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --workspace-name --user-principal-name
+      User-Agent:
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-graphrbac/0.60.0
+        Azure-SDK-For-Python AZURECLI/2.10.0
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/users/shangsu%40microsoft.com?api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects/@Element","odata.type":"Microsoft.DirectoryServices.User","objectType":"User","objectId":"6ae2ff4b-4939-4952-a097-d234aad383a3","deletionTimestamp":null,"accountEnabled":true,"ageGroup":null,"assignedLicenses":[{"disabledPlans":["b21a6b06-1988-436e-a07b-51ec6d9f52ad","531ee2f8-b1cb-453b-9c21-d2180d014ca5","bf28f719-7844-4079-9c78-c1307898e192","28b0fa46-c39a-4188-89e2-58e979a6b014","199a5c09-e0ca-4e37-8f7c-b05d533e1ea2","65cc641f-cccd-4643-97e0-a17e3045e541","e26c2fcc-ab91-4a61-b35c-03cdc8dddf66","46129a58-a698-46f0-aa5b-17f6586297d9","6db1f1db-2b46-403f-be40-e39395f08dbb","6dc145d6-95dd-4191-b9c3-185575ee6f6b","41fcdd7d-4733-4863-9cf4-c65b83ce2df4","2f442157-a11c-46b9-ae5b-6e39ff4e5849","c4801e8a-cb58-4c35-aca6-f2dcc106f287","0898bdbb-73b0-471a-81e5-20f1fe4dd66e","617b097b-4b93-4ede-83de-5f075bb5fb2f","33c4f319-9bdd-48d6-9c4d-410b750a4a5a","8e0c0a52-6a6c-4d40-8370-dd62790dcd70","4828c8ec-dc2e-4779-b502-87ac9ce28ab7","3e26ee1f-8a5f-4d52-aee2-b81ce45c8f40"],"skuId":"c7df2760-2c81-4ef7-b578-5b5392b571df"},{"disabledPlans":[],"skuId":"9f3d9c1d-25a5-4aaa-8e59-23a1e6450a67"},{"disabledPlans":[],"skuId":"26a18e8f-4d14-46f8-835a-ed3ba424a961"},{"disabledPlans":[],"skuId":"412ce1a7-a499-41b3-8eb6-b38f2bbc5c3f"},{"disabledPlans":["39b5c996-467e-4e60-bd62-46066f572726"],"skuId":"90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"},{"disabledPlans":[],"skuId":"c5928f49-12ba-48f7-ada3-0d743a3601d5"},{"disabledPlans":[],"skuId":"b05e124f-c7cc-45a0-a6aa-8cf78c946968"},{"disabledPlans":["e95bec33-7c88-4a70-8e19-b10bd9d0c014","5dbe027f-2339-4123-9542-606e4d348a72"],"skuId":"09015f9f-377f-4538-bbb5-f75ceb09358a"},{"disabledPlans":[],"skuId":"488ba24a-39a9-4473-8ee5-19291e71b002"},{"disabledPlans":["0b03f40b-c404-40c3-8651-2aceb74365fa","b650d915-9886-424b-a08d-633cede56f57","e95bec33-7c88-4a70-8e19-b10bd9d0c014","5dbe027f-2339-4123-9542-606e4d348a72","fe71d6c3-a2ea-4499-9778-da042bf08063","fafd7243-e5c1-4a3a-9e40-495efcb1d3c3"],"skuId":"ea126fc5-a19e-42e2-a731-da9d437bffcf"}],"assignedPlans":[{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"fe71d6c3-a2ea-4499-9778-da042bf08063"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"199a5c09-e0ca-4e37-8f7c-b05d533e1ea2"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"e95bec33-7c88-4a70-8e19-b10bd9d0c014"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"5dbe027f-2339-4123-9542-606e4d348a72"},{"assignedTimestamp":"2020-07-26T08:53:26Z","capabilityStatus":"Enabled","service":"MicrosoftOffice","servicePlanId":"fafd7243-e5c1-4a3a-9e40-495efcb1d3c3"},{"assignedTimestamp":"2020-06-18T16:18:34Z","capabilityStatus":"Enabled","service":"MicrosoftPrint","servicePlanId":"795f6fe0-cc4d-4773-b050-5dde4dc704c9"},{"assignedTimestamp":"2020-04-04T16:06:17Z","capabilityStatus":"Enabled","service":"MicrosoftCommunicationsOnline","servicePlanId":"018fb91e-cee3-418c-9063-d7562978bdaf"},{"assignedTimestamp":"2020-04-04T16:06:16Z","capabilityStatus":"Enabled","service":"MicrosoftCommunicationsOnline","servicePlanId":"ca4be917-fbce-4b52-839e-6647467a1668"},{"assignedTimestamp":"2020-04-03T23:33:35Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"9f431833-0334-42de-a7dc-70aa40db46db"},{"assignedTimestamp":"2020-04-03T23:33:35Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"efb87545-963c-4e0d-99df-69c6916d9eb0"},{"assignedTimestamp":"2020-04-03T23:33:35Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"34c0d7a0-a70f-4668-9238-47f9fc208882"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftCommunicationsOnline","servicePlanId":"0feaeb32-d00e-4d66-bd5a-43b5b83db82c"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProcessSimple","servicePlanId":"07699545-9485-468e-95b6-2fca3738be01"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Adallom","servicePlanId":"8c098270-9dd4-4350-9b30-ba4703f3b36b"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"b1188c4c-1b36-4018-b48b-ee07604f6feb"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftStream","servicePlanId":"6c6042f5-6f01-4d67-b8c1-eb99d36eed3e"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"AADPremiumService","servicePlanId":"41781fb2-bc02-4b7c-bd55-b576c07bb09d"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Sway","servicePlanId":"a23b959c-7ce8-4e57-9140-b90eb88a9e97"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"5136a095-5cf0-4aff-bec3-e84448b38ea5"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"PowerBI","servicePlanId":"70d33638-9c74-4d01-bfd3-562de28bd4ba"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProjectWorkManagement","servicePlanId":"b737dad2-2f6c-4c65-90e3-ca563267e8b9"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"RMSOnline","servicePlanId":"bea4c11e-220a-4e6d-8eb8-8ea15d019f90"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"AADPremiumService","servicePlanId":"eec0eb4f-6444-4f95-aba0-50c24d67f998"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProjectProgramsAndPortfolios","servicePlanId":"818523f5-016b-4355-9be8-ed6944946ea7"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"OfficeForms","servicePlanId":"e212cbc7-0961-4c40-9825-01117710dcb1"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"4de31727-a228-4ec3-a5bf-8e45b5ca48cc"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"SCO","servicePlanId":"c1ec4a95-1f05-45b3-a911-aa3fa01094f5"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"2bdbaf8f-738f-4ac7-9234-3c3ee2ce7d0f"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftOffice","servicePlanId":"663a804f-1c30-4ff0-9915-9db84f0d1cea"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"TeamspaceAPI","servicePlanId":"57ff2da0-773e-42df-b2af-ffb7a2317929"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"AzureAdvancedThreatAnalytics","servicePlanId":"14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"PowerAppsService","servicePlanId":"9c0dab89-a30c-4117-86e7-97bda240acd2"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"exchange","servicePlanId":"efb0351d-3b08-4503-993d-383af8de41e3"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"SharePoint","servicePlanId":"da792a53-cbc0-4184-a10d-e544dd34b3c1"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Deskless","servicePlanId":"8c7d2df8-86f0-4902-b2ed-a0458298f3b3"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"RMSOnline","servicePlanId":"6c57d4b6-3b23-47a5-9bc9-69f17b4947b3"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MultiFactorService","servicePlanId":"8a256a2b-b617-496d-b51b-e76466e88db0"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"ProcessSimple","servicePlanId":"fa200448-008c-4acb-abd4-ea106ed2199d"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"To-Do","servicePlanId":"3fb82609-8c27-4f7b-bd51-30634711ee67"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"RMSOnline","servicePlanId":"5689bec4-755d-4753-8b61-40975025187c"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"YammerEnterprise","servicePlanId":"7547a3fe-08ee-4ccb-b430-5077c5041653"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"WhiteboardServices","servicePlanId":"4a51bca5-1eff-43f5-878c-177680f191af"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"MicrosoftOffice","servicePlanId":"43de0ff5-c92c-492b-9116-175376d08c38"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"CRM","servicePlanId":"50554c47-71d9-49fd-bc54-42a2765c555c"},{"assignedTimestamp":"2020-04-03T07:19:37Z","capabilityStatus":"Enabled","service":"Adallom","servicePlanId":"2e2ddb96-6af9-4b1d-a3f0-d6ecfd22edb2"},{"assignedTimestamp":"2020-04-02T22:13:18Z","capabilityStatus":"Enabled","service":"WindowsDefenderATP","servicePlanId":"871d91ec-ec1a-452b-a83f-bd76c7d770ef"},{"assignedTimestamp":"2020-04-02T22:13:18Z","capabilityStatus":"Enabled","service":"Windows","servicePlanId":"e7c91390-7625-45be-94e0-e16907e03118"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"Netbreeze","servicePlanId":"03acaee3-9492-4f40-aed4-bcb6b32981b6"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"DYN365AISERVICEINSIGHTS","servicePlanId":"1412cdc1-d593-4ad1-9050-40c30ad0b023"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"CRM","servicePlanId":"d56f3deb-50d8-465a-bedb-f079817ccac1"},{"assignedTimestamp":"2020-04-02T22:13:17Z","capabilityStatus":"Enabled","service":"MicrosoftFormsProTest","servicePlanId":"97f29a83-1a20-44ff-bf48-5e4ad11f3e51"}],"city":"Beijing","companyName":"MICROSOFT
+        CHINA CO LTD","consentProvidedForMinor":null,"country":null,"createdDateTime":"2020-04-02T22:08:08Z","creationType":null,"department":"COGS
+        Data China - Cosmos","dirSyncEnabled":true,"displayName":"Shangwei Sun","employeeId":null,"facsimileTelephoneNumber":null,"givenName":"Shangwei","immutableId":"1362023","isCompromised":null,"jobTitle":"SOFTWARE
+        ENGINEER","lastDirSyncTime":"2020-07-11T14:19:07Z","legalAgeGroupClassification":null,"mail":"Shangwei.Sun@microsoft.com","mailNickname":"shangsu","mobile":null,"onPremisesDistinguishedName":"CN=Shangwei
+        Sun,OU=UserAccounts,DC=fareast,DC=corp,DC=microsoft,DC=com","onPremisesSecurityIdentifier":"S-1-5-21-2146773085-903363285-719344707-2611871","otherMails":[],"passwordPolicies":"DisablePasswordExpiration","passwordProfile":null,"physicalDeliveryOfficeName":"BEIJING-BJW-1/Mobile","postalCode":null,"preferredLanguage":null,"provisionedPlans":[{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"MicrosoftCommunicationsOnline"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"MicrosoftCommunicationsOnline"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"exchange"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"CRM"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"MicrosoftCommunicationsOnline"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"SharePoint"},{"capabilityStatus":"Enabled","provisioningStatus":"Success","service":"CRM"}],"provisioningErrors":[],"proxyAddresses":["smtp:shangsu@service.microsoft.com","SMTP:Shangwei.Sun@microsoft.com","smtp:shangsu@microsoft.com","x500:/o=ExchangeLabs/ou=Exchange
+        Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=21fc8adf871949299627d16e1cfd00b9-Shangwei
+        Su","X500:/o=microsoft/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f52eb0a1987547c3890c81ead532a38e-Shangwei
+        Sun","X500:/o=microsoft/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=0eb89b67c7094ea6a49396dcd00388d3-Shangwei
+        Sun","smtp:t-shasun@microsoft.onmicrosoft.com"],"refreshTokensValidFromDateTime":"2020-04-03T06:12:44Z","showInAddressList":null,"signInNames":[],"sipProxyAddress":"shangsu@microsoft.com","state":null,"streetAddress":null,"surname":"Sun","telephoneNumber":"+86
+        (10) 59175933","thumbnailPhoto@odata.mediaEditLink":"directoryObjects/6ae2ff4b-4939-4952-a097-d234aad383a3/Microsoft.DirectoryServices.User/thumbnailPhoto","usageLocation":"CN","userIdentities":[],"userPrincipalName":"shangsu@microsoft.com","userState":null,"userStateChangedOn":null,"userType":"Member","extension_18e31482d3fb4a8ea958aa96b662f508_BuildingName":"MOBILE","extension_18e31482d3fb4a8ea958aa96b662f508_BuildingID":"99998","extension_18e31482d3fb4a8ea958aa96b662f508_ReportsToPersonnelNbr":"1251974","extension_18e31482d3fb4a8ea958aa96b662f508_ReportsToFullName":"Zhao,
+        Xue Shan","extension_18e31482d3fb4a8ea958aa96b662f508_ReportsToEmailName":"XUZHAO","extension_18e31482d3fb4a8ea958aa96b662f508_PositionNumber":"91975828","extension_18e31482d3fb4a8ea958aa96b662f508_SupervisorInd":"N","extension_18e31482d3fb4a8ea958aa96b662f508_ProfitCenterCode":"P10156563","extension_18e31482d3fb4a8ea958aa96b662f508_LocationAreaCode":"CN","extension_18e31482d3fb4a8ea958aa96b662f508_CostCenterCode":"10156563","extension_18e31482d3fb4a8ea958aa96b662f508_CompanyCode":"1107","extension_18e31482d3fb4a8ea958aa96b662f508_PersonnelNumber":"1362023"}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '14449'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Wed, 05 Aug 2020 08:13:03 GMT
+      duration:
+      - '465762'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - RONGGnVrtp+xWv5upSAxV3wy4PY0MvNVDBtUIdOGuIk=
+      ocp-aad-session-key:
+      - PIFz856XoxjqtZR2S6Haj1Z7hU_TTh2QR37PDds36GFf3ZwXBXdY6iFnqxRCI60t04-IlDfE2Ua0fSVYPin9NCJw-bpk9cY-2G7pptpJZQ_SKXuKyq-crX7jdRBtTcFP.l2P5sktTIAlSqDcvNAkhrCU6aK7VkxjkMSaDGsSdNzw
+      pragma:
+      - no-cache
+      request-id:
+      - 914fc30f-5126-4b6f-aae9-997bedd5c59b
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-ms-resource-unit:
+      - '1'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments?api-version=2020-02-01-preview&principalId=6ae2ff4b-4939-4952-a097-d234aad383a3
+  response:
+    body:
+      string: '[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1-23a9b13a-a58b-4d8e-a58a-ff4c351fae61","roleId":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","principalId":"23a9b13a-a58b-4d8e-a58a-ff4c351fae61"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7"},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"}]'
+    headers:
+      content-length:
+      - '921'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:05 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ms-continuation:
+      - ''
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - synapse role assignment list
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - --workspace-name --service-principal-name
+      User-Agent:
+      - python/3.7.8 (Windows-10-10.0.18362-SP0) msrest/0.6.9 msrest_azure/0.6.3 azure-graphrbac/0.60.0
+        Azure-SDK-For-Python AZURECLI/2.10.0
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://graph.windows.net/00000000-0000-0000-0000-000000000000/servicePrincipals?$filter=servicePrincipalNames%2Fany%28x%3Ax%20eq%20%27http%3A%2F%2Fshangwei-sp%27%29&api-version=1.6
+  response:
+    body:
+      string: '{"odata.metadata":"https://graph.windows.net/00000000-0000-0000-0000-000000000000/$metadata#directoryObjects","value":[{"odata.type":"Microsoft.DirectoryServices.ServicePrincipal","objectType":"ServicePrincipal","objectId":"23a9b13a-a58b-4d8e-a58a-ff4c351fae61","deletionTimestamp":null,"accountEnabled":true,"addIns":[],"alternativeNames":[],"appDisplayName":"shangwei-sp","appId":"f14b9779-ec77-4b91-bdac-043b8336d101","applicationTemplateId":null,"appOwnerTenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47","appRoleAssignmentRequired":false,"appRoles":[],"displayName":"shangwei-sp","errorUrl":null,"homepage":"https://shangwei-sp","informationalUrls":{"termsOfService":null,"support":null,"privacy":null,"marketing":null},"keyCredentials":[],"logoutUrl":null,"notificationEmailAddresses":[],"oauth2Permissions":[{"adminConsentDescription":"Allow
+        the application to access shangwei-sp on behalf of the signed-in user.","adminConsentDisplayName":"Access
+        shangwei-sp","id":"3edfc4af-7c63-40ef-9b8b-2a57cc936c95","isEnabled":true,"type":"User","userConsentDescription":"Allow
+        the application to access shangwei-sp on your behalf.","userConsentDisplayName":"Access
+        shangwei-sp","value":"user_impersonation"}],"passwordCredentials":[],"preferredSingleSignOnMode":null,"preferredTokenSigningKeyEndDateTime":null,"preferredTokenSigningKeyThumbprint":null,"publisherName":"Microsoft","replyUrls":[],"samlMetadataUrl":null,"samlSingleSignOnSettings":null,"servicePrincipalNames":["http://shangwei-sp","f14b9779-ec77-4b91-bdac-043b8336d101"],"servicePrincipalType":"Application","signInAudience":"AzureADMyOrg","tags":[],"tokenEncryptionKeyId":null}]}'
+    headers:
+      access-control-allow-origin:
+      - '*'
+      cache-control:
+      - no-cache
+      content-length:
+      - '1642'
+      content-type:
+      - application/json; odata=minimalmetadata; streaming=true; charset=utf-8
+      dataserviceversion:
+      - 3.0;
+      date:
+      - Wed, 05 Aug 2020 08:13:05 GMT
+      duration:
+      - '345095'
+      expires:
+      - '-1'
+      ocp-aad-diagnostics-server-name:
+      - mWUJuGpqapy7ttNC0UGCYze0snyn43E3dkj6imYiFHg=
+      ocp-aad-session-key:
+      - Wsnm1qa93hQhVYv0_qPQh9Sr4anYCQjkMS2xO6BLY4ZG0FfUZmM5SzkinhrHJNUAVQv76IsIiqfySXCcLdLOlRQsjunZwnxT2XNHs6bbHuUEevUalkerLSnC3NpDP9Ur.01fceEnCNFX1_Fx3EIZ7_qCSkHAC837pvhqZRG-7RYg
+      pragma:
+      - no-cache
+      request-id:
+      - 2e30e2c0-7f13-4bf9-9b69-84968cd6263f
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-aspnet-version:
+      - 4.0.30319
+      x-ms-dirapi-data-contract-version:
+      - '1.6'
+      x-ms-resource-unit:
+      - '1'
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments?api-version=2020-02-01-preview&principalId=23a9b13a-a58b-4d8e-a58a-ff4c351fae61
+  response:
+    body:
+      string: '[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1-23a9b13a-a58b-4d8e-a58a-ff4c351fae61","roleId":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","principalId":"23a9b13a-a58b-4d8e-a58a-ff4c351fae61"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7"},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"}]'
+    headers:
+      content-length:
+      - '921'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:06 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ms-continuation:
+      - ''
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments?api-version=2020-02-01-preview&principalId=6ae2ff4b-4939-4952-a097-d234aad383a3
+  response:
+    body:
+      string: '[{"id":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"6e4bf58a-b8e1-4cc3-bbf9-d73143322b78","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1-23a9b13a-a58b-4d8e-a58a-ff4c351fae61","roleId":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","principalId":"23a9b13a-a58b-4d8e-a58a-ff4c351fae61"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"4220bdc6-eeb9-4d66-ad6c-e69ba449d9c7"},{"id":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"c3a6d2f1-a26f-4810-9b0f-591308d5cbf1","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"},{"id":"7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3","roleId":"7af0c69a-a548-47d6-aea3-d00e69bd83aa","principalId":"6ae2ff4b-4939-4952-a097-d234aad383a3"}]'
+    headers:
+      content-length:
+      - '921'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:08 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-ms-continuation:
+      - ''
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: DELETE
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments/7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3?api-version=2020-02-01-preview
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Wed, 05 Aug 2020 08:13:09 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - azsdk-python-synapse/0.2.0 Python/3.7.8 (Windows-10-10.0.18362-SP0)
+    method: GET
+    uri: https://shangweiworkspacecli.dev.azuresynapse.net/rbac/roleAssignments/7af0c69a-a548-47d6-aea3-d00e69bd83aa-6ae2ff4b-4939-4952-a097-d234aad383a3?api-version=2020-02-01-preview
+  response:
+    body:
+      string: '{"error":{"code":"RoleAssignmentNotFound","message":"RoleAssignmentNotFound"}}'
+    headers:
+      content-length:
+      - '78'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 05 Aug 2020 08:13:10 GMT
+      server:
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    status:
+      code: 404
+      message: Not Found
+version: 1

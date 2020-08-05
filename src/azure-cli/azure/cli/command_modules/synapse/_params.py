@@ -9,7 +9,10 @@ from argcomplete import FilesCompleter
 from azure.cli.core.commands.parameters import name_type, tags_type, get_three_state_flag, get_enum_type
 from azure.cli.core.util import get_json_object
 from ._validators import validate_storage_account, validate_statement_language
+from ._completers import get_role_definition_name_completion_list
 from .constant import SparkBatchLanguage, SparkStatementLanguage
+from azure.cli.core.commands.parameters import get_enum_type, name_type, tags_type, \
+    get_generic_completion_list, get_three_state_flag, get_resource_name_completion_list
 
 
 def load_arguments(self, _):
@@ -137,6 +140,30 @@ def load_arguments(self, _):
         c.argument('start_ip_address', help='The start IP address of the firewall rule. Must be IPv4 format.')
         c.argument('end_ip_address', help='The end IP address of the firewall rule. Must be IPv4 format. '
                                           'Must be greater than or equal to startIpAddress.')
+    # synapse workspace access-control
+    for scope in ['create', 'list']:
+        with self.argument_context('synapse role assignment ' + scope) as c:
+            c.argument('workspace_name', help='The workspace name.', completer=get_resource_name_completion_list('Microsoft.Synapse/workspaces'))
+            c.argument('role', help='The role name/id that is assigned to the principal.', completer=get_role_definition_name_completion_list)
+            c.argument('object_id', help='The Azure AD ObjectId of the User, Group or Service Principal.',
+                       arg_group='Create by ObjucetId')
+            c.argument('service_principal_name', help='The service principal name.',
+                       arg_group='Create by Service Principle Name')
+            c.argument('user_principal_name', help='The user principal name.',
+                       arg_group='Create by User Principle Name')
+
+    for scope in ['show', 'delete']:
+        with self.argument_context('synapse role assignment ' + scope) as c:
+            c.argument('workspace_name', help='The workspace name.', completer=get_resource_name_completion_list('Microsoft.Synapse/workspaces'))
+            c.argument('role_assignment_id', help='Id of the role that is assigned to the principal.')
+
+    with self.argument_context('synapse role definition show') as c:
+        c.argument('workspace_name', help='The workspace name.', completer=get_resource_name_completion_list('Microsoft.Synapse/workspaces'))
+        c.argument('role', help='Id of the role that is assigned to the principal.', completer=get_role_definition_name_completion_list)
+
+    with self.argument_context('synapse role definition list') as c:
+        c.argument('workspace_name', help='The workspace name.', completer=get_resource_name_completion_list('Microsoft.Synapse/workspaces'))
+
     # synapse spark job
     for scope in ['job', 'session', 'statement']:
         with self.argument_context('synapse spark ' + scope) as c:

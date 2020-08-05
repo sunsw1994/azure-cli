@@ -22,6 +22,7 @@ def load_command_table(self, _):
     from ._client_factory import cf_synapse_client_bigdatapool_factory
     from ._client_factory import cf_synapse_client_sqlpool_factory
     from ._client_factory import cf_synapse_client_ipfirewallrules_factory
+    from ._client_factory import cf_synapse_client_accesscontrol_factory
     from ._client_factory import cf_synapse_spark_batch
     from ._client_factory import cf_synapse_spark_session
 
@@ -44,6 +45,10 @@ def load_command_table(self, _):
     synapse_firewallrules_sdk = CliCommandType(
         operations_tmpl='azure.mgmt.synapse.operations#IpFirewallRulesOperations.{}',
         client_factory=cf_synapse_client_ipfirewallrules_factory)
+
+    synapse_accesscontrol_sdk = CliCommandType(
+        operations_tmpl='azure.synapse.accesscontrol.operations#AccessControlClientOperationsMixin.{}',
+        client_factory=None)
 
     synapse_spark_session_sdk = CliCommandType(
         operations_tmpl='azure.synapse.spark.operations#SparkSessionOperations.{}',
@@ -125,6 +130,19 @@ def load_command_table(self, _):
         g.custom_command('list', 'list_spark_session_statements')
         g.custom_show_command('show', 'get_spark_session_statement')
         g.custom_command('cancel', 'cancel_spark_session_statement', confirmation=True)
+
+    # Data Plane Commands --Access control operations
+    with self.command_group('synapse role assignment', synapse_accesscontrol_sdk,
+                            custom_command_type=get_custom_sdk('accesscontrol', None)) as g:
+        g.custom_command('create', 'create_role_assignment')
+        g.custom_command('list', 'list_role_assignments')
+        g.custom_show_command('show', 'get_role_assignment_by_id')
+        g.custom_command('delete', 'delete_role_assignment_by_id', confirmation=True)
+
+    with self.command_group('synapse role definition', synapse_accesscontrol_sdk,
+                            custom_command_type=get_custom_sdk('accesscontrol', None)) as g:
+        g.custom_command('list', 'list_role_definitions')
+        g.custom_show_command('show', 'get_role_definition')
 
     with self.command_group('synapse', is_preview=True):
         pass
