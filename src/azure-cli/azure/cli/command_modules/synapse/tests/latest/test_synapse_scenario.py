@@ -356,10 +356,10 @@ class SynapseScenarioTests(ScenarioTest):
 
     def test_access_control(self):
         self.kwargs.update({
-            'workspace': 'shangweiworkspacecli',
+            'workspace': 'testsynapseworkspace',
             'role': 'Sql Admin',
-            'userPrincipal': 'shangsu@microsoft.com',
-            'servicePrincipal': 'shangwei-sp'})
+            'userPrincipal': 'username@microsoft.com',
+            'servicePrincipal': 'http://username-sp'})
 
         self.cmd(
             'az synapse role definition list --workspace-name {workspace} ',
@@ -377,7 +377,7 @@ class SynapseScenarioTests(ScenarioTest):
 
         # create role assignment
         role_assignment_create = self.cmd(
-            'az synapse role assignment create --workspace-name {workspace} --role "{role}" --user-principal-name  {userPrincipal} ',
+            'az synapse role assignment create --workspace-name {workspace} --role "{role}" --assignee  {userPrincipal} ',
             checks=[
                 self.check('roleId', self.kwargs['roleId'])
             ]).get_output_in_json()
@@ -387,7 +387,7 @@ class SynapseScenarioTests(ScenarioTest):
 
         # get role assignment
         self.cmd(
-            'az synapse role assignment show --workspace-name {workspace} --role-assignment-id {roleAssignmentId} ',
+            'az synapse role assignment show --workspace-name {workspace} --id {roleAssignmentId} ',
             checks=[
                 self.check('roleId', self.kwargs['roleId']),
                 self.check('principalId', self.kwargs['principalId'])
@@ -402,30 +402,30 @@ class SynapseScenarioTests(ScenarioTest):
 
         # list role assignment by userPrincipal
         self.cmd(
-            'az synapse role assignment list --workspace-name {workspace} --user-principal-name {userPrincipal} ',
+            'az synapse role assignment list --workspace-name {workspace} --assignee {userPrincipal} ',
             checks=[
-                self.check('length([])', 3)
+                self.check('length([])', 2)
             ])
 
         # list role assignment by servicePrincipal
         self.cmd(
-            'az synapse role assignment list --workspace-name {workspace} --service-principal-name {servicePrincipal} ',
+            'az synapse role assignment list --workspace-name {workspace} --assignee {servicePrincipal} ',
             checks=[
                 self.check('length([])', 1)
             ])
 
         # list role assignment by object_id
         self.cmd(
-            'az synapse role assignment list --workspace-name {workspace} --object-id {principalId} ',
+            'az synapse role assignment list --workspace-name {workspace} --assignee {principalId} ',
             checks=[
-                self.check('length([])', 3)
+                self.check('length([])', 2)
             ])
 
         # delete role assignment
         self.cmd(
-            'az synapse role assignment delete --workspace-name {workspace} --role-assignment-id {roleAssignmentId} -y ')
+            'az synapse role assignment delete --workspace-name {workspace} --ids {roleAssignmentId} -y ')
         self.cmd(
-            'az synapse role assignment show --workspace-name {workspace} --role-assignment-id {roleAssignmentId} ',
+            'az synapse role assignment show --workspace-name {workspace} --id {roleAssignmentId} ',
             expect_failure=True)
 
     def _create_workspace(self):
